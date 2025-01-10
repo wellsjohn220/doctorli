@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Li's Clinic</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="loading.js"></script>
+  <link rel="stylesheet" href="loading.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediastyle.css" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#myPage"><span class="glyphicon glyphicon-user"></span>&nbsp;Doctor Li</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span
+                class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#businesshour">Have to know before start</a></li>
+              <li><a href="#security">Cybersecurity</a></li>
+              <li><a href="#breach">Data Breach</a></li>
+              <li><a href="#heaven">Heaven System Demo</a></li>
+              <li><a href="#chatgpt">ChatGpt Introduction</a></li>
+              <li><a href="#dataview">View Data</a></li>
+              <li><a href="#about">About</a></li>
+              <!-- <li><a href="#staff">Our Staffs</a></li> -->
+            </ul>
+          </li>
+          <li><a href="#services">TEAMS</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#pricing">PROTACTION</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-center">
+    <br />
+    <h1>Chinese Medicine and Acupuncture Clinic</h1>
+    <p id="msg" style="color: lime;">Highly Recommend and Reasonable Priced in Sydney</p>
+    <div class="form-group row">
+      <div class="col-xs-3">
+      </div>
+      <div class="col-xs-6">
+        <form name="submit-to-google-sheet">
+          <div class="input-group">
+            <input type="email" name="Email" class="form-control" size="50" placeholder="Email Address" required>
+            <input class="form-control" id="Ereg" name="Ereg" type="hidden">
+            <input class="form-control" id="Eregtime" name="Eregtime" type="hidden">
+            <div class="input-group-btn">
+              <button type="submit" class="btn btn-danger" onclick="generateEDate();">
+                <span class="glyphicon glyphicon-envelope"></span>&nbsp;Subscribe</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-xs-3">
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (About Section) -->
+  <div id="about" class="container-fluid"><br />
+    <div class="row">
+      <div class="col-sm-8">
+        <h2>About Medicine and Acupuncture Solution</h2>
+        <h4>Providing herbal medicine, acupuncture, remedial massage, and working 36 years of experience in China & Australia.</h4>
+       <!--  <ul>
+          <li style="display: inline">
+            <a href="/download/XXXXX Develop ICT Solution Assessment 1.docx" download>Assessment One</a> ||
+          </li>
+          <li style="display: inline">
+            <a href="/download/XXXXX Develop ICT Solution Assessment 2.docx" download>Assessment Two</a> ||
+          </li>
+          <li style="display: inline">
+            <a href="https://docs.google.com/presentation/d/1Pz9BiulAIDsNJQA9wFN_RBPV8yYdZVnJfwURqSkNGbQ/edit?usp=sharing"
+              target="_blank">Security Slide Show</a> ||
+          </li>
+          <li style="display: inline">
+            <a href="https://wellsjohn220.github.io/projectwebsite/Demoproject-chart.html" target="_blank">View My
+              Project</a> ||
+          </li>
+          <li style="display: inline">
+            <a href="http://webprogramming.somee.com/" target="_blank">Protection Example</a> ||
+          </li>
+                <li style="display: inline">
+            <a href="http://wiceduau.somee.com/" target="_blank">Web Program Example</a>
+          </li>
+
+        </ul> -->
+        <img src="images/frame.png" alt="scan by your phone" style="float: left" id="hideme" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <!--    <h4>My ICT Solution Projects</h4>
+        <p><a href="https://thedojosite-5ebd4.web.app/login" target="_blank">Todo Solution</a>&nbsp;||&nbsp;
+          <a href="https://moneyfull123452023.web.app/version" target="_blank">Money Solution</a>
+          &nbsp;||&nbsp;
+          <a href="https://readinglistapp-c3983.web.app/" target="_blank">Reading Solution</a>
+          &nbsp;||&nbsp;
+          <a href="https://memory123452023.web.app/" target="_blank">Memory Game</a>
+        </p> -->
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-signal logo"></span><br />
+        <!-- <a href="#link" class="btn btn-info" role="button">Link Button</a> -->
+        <br><a href="https://forms.gle/ymQvsjmGSew8es3u6" target="blank" class="btn btn-info btn-lg">
+          Fill the Feedback Form &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button></a><br />
+        <br><a
+          href="https://docs.google.com/spreadsheets/d/1q8pEMbV3DxDDc735BTB_EsWeUS4WLnkyf7GaQOu7hWY/edit?usp=sharing"
+          target="blank" class="btn btn-info btn-lg">
+          View the Feedback Result</button></a><br>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-grey">
+    <div class="row">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-globe logo slideanim"></span>
+      </div>
+      <div class="col-sm-8">
+        <h2>Our Values</h2><br>
+        <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+        <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (Business Hour Section) -->
+  <div id="businesshour" class="container-fluid">
+
+    <div class="row">
+      <div class="col-sm-8">
+        <h2>We have to know 10 things before woking ICT business</h2><br>
+        <table class="table table-bordered table-hover table-striped">
+          <thead>
+            <tr style="background-color: #877a45; color: white;">
+              <th>Good for ICT</th>
+              <th>Hard for ICT</th>
+              <th>Comments</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Good Salaries</td>
+              <td>...</td>
+              <td>Start 60000 Up to 200000</td>
+            </tr>
+            <tr>
+              <td>Working Remote</td>
+              <td>...</td>
+              <td>Work at home, Save time on the way</td>
+            </tr>
+            <tr>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td>...</td>
+              <td>Long time to work</td>
+              <td>In order to solve problems</td>
+            </tr>
+            <tr>
+              <td>...</td>
+              <td>Change so quick</td>
+              <td>Keep to learn your whole life</td>
+            </tr>
+            <tr>
+              <td>...</td>
+              <td>Prepare for change</td>
+              <td>Some is too hard to keep going</td>
+            </tr>
+
+          </tbody>
+        </table>
+        <br><a href="https://www.youtube.com/watch?v=2WB6RcY0MPc" target="_blank"><button
+            class="btn btn-primary btn-lg">Reference Site</button></a>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-home logo" style="float: right;"></span><br><br><br><br>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <div id="heaven" class="container-fluid" style="background-color: white;">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-home logo"></span><br>
+    </div>
+    <div class="col-sm-8">
+      <h2>Heaven System Gantt Char</h2><br>
+      <img src="images/heaven.png" alt="scan by your phone" style="float: left; width: 100%; margin-bottom: 20px;" />
+      <br>
+      <br><br><a href="https://www.youtube.com/watch?v=2WB6RcY0MPc" target="_blank"><button
+          class="btn btn-primary btn-lg">Reference Site</button></a>
+    </div>
+  </div>
+
+  <!-- Container (Security Section) -->
+  <div id="security" class="container-fluid text-center">
+
+    <img src="https://cdn-res.keymedia.com/cms/images/us/036/0248_637317913147707069.jpg"
+      class="w3-image w3-greyscale-min" id="myimg" style="width:20%; float:right;">
+    <h2>Cybersecurity</h2>
+    <p>
+      Referred to as information security, cybersecurity refers to the practice of ensuring the integrity,
+      confidentiality,
+      and availability (ICA) of information. Cybersecurity is comprised of an evolving set of tools, risk management
+      approaches,
+      technologies, training, and best practices designed to protect networks, devices, programs, and data from attacks
+      or unauthorized access.
+      <br /><br /><br /><br /><br />
+    </p>
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Why is cybersecurity important</a>
+          </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse">
+          <div class="panel-body">
+            <img src="images/BLEW.GIF" class="w3-image w3-greyscale-min" id="myimg"
+              style="float: left; margin-right: 20px;">The world relies on technology more than ever before. As a
+            result,
+            digital data creation has surged. Today, businesses and governments store a great deal of that data on
+            computers and transmit
+            it across networks to other computers. Devices and their underlying systems have vulnerabilities that,
+            when exploited, undermine the health and objectives of an organization.
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Common types of cybersecurity</a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">
+            <img src="images/LOVE.GIF" class="w3-image w3-greyscale-min" id="myimg"
+              style="float: left; margin-right: 20px;">
+            <ul style="float: left; text-align: left;">
+              <li>Network Security protects network traffic by controlling incoming and outgoing connections to prevent
+                threats from entering or spreading on the network.</li>
+              <li>Data Loss Prevention (DLP) protects data by focusing on the location, classification and monitoring of
+                information at rest, in use and in motion.</li>
+              <li>Cloud Security provides protection for data used in cloud-based services and applications.</li>
+              <li>Intrusion Detection Systems (IDS) or Intrusion Prevention Systems (IPS) work to identify potentially
+                hostile cyber activity.</li>
+              <li>Identity and Access Management (IAM) use authentication services to limit and track employee access to
+                protect internal systems from malicious entities.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Type of Malware</a>
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">
+            <ul style="float: left;">
+              <li>Virus</li>
+              <li>Worms</li>
+              <li>Spyware</li>
+              <li>Trojans</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Ransomware</a>
+          </h4>
+        </div>
+        <div id="collapse4" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>
+              Also known as scareware, ransomware comes with a heavy price.
+              Able to lockdown networks and lock out users until a ransom is paid,
+              ransomware has targeted some of the biggest organizations in the world today — with expensive results.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Container (Data Breach Section) -->
+  <div id="breach" class="container-fluid text-center" style="background-color: white;">
+
+    <img src="https://www.idagent.com/wp-content/uploads/2021/10/IDAblog10282021-768x401.jpg"
+      class="w3-image w3-greyscale-min" id="myimg2" style="width:20%; float:right;">
+    <h2>Data Breach</h2>
+    <p style="text-align: left;">
+      A data breach is a security incident in which information is accessed without authorization.
+      Data breaches can hurt businesses and consumers in a variety of ways.
+      They are a costly expense that can damage lives and reputations and take time to repair.
+    </p>
+    <p style="text-align: left;">
+      As technology progresses, more and more of our information has been moving to the digital world.
+      As a result, cyberattacks have become increasingly common and costly.
+      We’ve created a 7-step checklist to use in the case of a data breach. Depending on the severity of the breach and
+      the information exposed,
+      you’ll need to apply some or all of these steps to varying degree. <b>Seven Step Checklist</b>
+    </p>
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#home">Confirm the breach if your information was exposed</a></li>
+      <li><a data-toggle="tab" href="#menu1">Find out what type of data was stolen</a></li>
+      <li><a data-toggle="tab" href="#menu2">Accept the breached company's offer(s) to help</a></li>
+      <li><a data-toggle="tab" href="#menu3">strengthen your online logins, passwords and security</a></li>
+      <li><a data-toggle="tab" href="#menu4">Contact the right people and take additional action</a></li>
+    </ul>
+    <div class="tab-content" style="background-color: #eee; padding: 40px; height: 300px;">
+      <div id="home" class="tab-pane fade in active">
+        <h3>Confirm the breach and if your information was exposed</h3>
+        <p><b>1. Confirm the breach and if your information was exposed.</b>
+          The first step is to confirm that a breach actually occurred.
+          When a data breach occurs, scammers may reach out to you posing as the breached company to try to obtain more
+          of your personal information. Don't fall for fake emails. Go to the company's secure website and/or
+          call the company to confirm the breach and whether your information was involved.</p>
+      </div>
+      <div id="menu1" class="tab-pane fade">
+        <h3>Find out what type of data was stolen</h3>
+        <p><b>2. Find out what type of data was stolen.</b>
+          Why does the type of information exposed matter?
+          While stolen credit cards and the like can be cancelled and replaced, it's quite difficult to obtain a new
+          Social Security number. And fraudsters can do a lot more with your SSN and other unique,
+          sensitive PII than they can accomplish with an email or credit card account.</p>
+      </div>
+      <div id="menu2" class="tab-pane fade">
+        <h3>Accept the breached company's offer(s) to help</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam.</p>
+      </div>
+      <div id="menu3" class="tab-pane fade">
+        <h3>Change Password and Security Q&A</h3>
+        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+      <div id="menu4" class="tab-pane fade">
+        <h3>Contact the right people to tack action</h3>
+        <p>This is where the type of data stolen really comes into play.
+          If your credit and/or debit card information was stolen, you should reach out immediately to the financial
+          institution(s) to cancel your card and request a new one. However, if personal information like your Social
+          Security number was stolen,
+          it may be easier for you to become a victim of identity theft.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Container (ChatGpt Section) -->
+  <div id="chatgpt" class="container-fluid text-center">
+    <h2>Using Medio Object Introduction to ChatGpt</h2>
+    <p>ChatGPT is an AI chatbot developed by OpenAI. --
+      ChatGPT can help boost your productivity if used correctly. --
+      Knowing how to write prompts correctly is the key to helping you use ChatGPT</p>
+    <hr>
+
+    <!-- Left-aligned media object -->
+    <div class="media">
+      <div class="media-left">
+        <a href="https://www.w3schools.com/gen_ai/chatgpt-3-5/index.php" target="_blank"><img
+            src="images/chatgptone.jpg" class="media-object" style="width:300px" id="myimg" alt="Click learn more"></a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">What is chatgpt</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.</p>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Right-aligned media object -->
+    <div class="media">
+      <div class="media-body">
+        <h4 class="media-heading">Why we need chatgpt</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.</p>
+      </div>
+      <div class="media-right">
+        <img src="images/chatgpttwo.jpg" id="myimg" class="media-object" style="width:300px">
+      </div>
+    </div>
+    <hr>
+    <!-- Left-aligned media object -->
+    <div class="media">
+      <div class="media-left">
+        <img src="images/chatgptthree.jpg" class="media-object" style="width:300px" id="myimg">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Chatgpt Example</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (Services Section) -->
+  <div id="services" class="container-fluid text-center" style="background-color: white;">
+    <h2>Project Teams</h2>
+    <h4>Companies Use Project Terms</h4>
+    <br>
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-off logo-small"></span>
+        <h4>PROBLEM SOLVING</h4>
+        <p>Teams are able to apply their range of complementary skills with brainstorming.</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-heart logo-small"></span>
+        <h4>DECISION MAKING</h4>
+        <p>Presented with a number of possible solutions by team in order to make the best.</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-eye-open logo-small"></span>
+        <h4>CREATE IDEAS</h4>
+        <p>Interactive teamwork
+          can generate a flood of creative and innovative ideas.</p>
+      </div>
+    </div>
+    <br><br>
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-leaf logo-small"></span>
+        <h4>GREEN</h4>
+        <p>Lorem ipsum dolor sit amet..</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-certificate logo-small"></span>
+        <h4>CERTIFIED</h4>
+        <p>Lorem ipsum dolor sit amet..</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-wrench logo-small"></span>
+        <h4 style="color:#303030;">HARD WORK</h4>
+        <p>Lorem ipsum dolor sit amet..</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (Portfolio Section) -->
+  <div id="portfolio" class="container-fluid text-center bg-grey">
+    <h2>Portfolio for my ICT Solution</h2>
+    <hr>
+    <h4>What we have created</h4>
+    <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img
+            src="https://www.researchgate.net/profile/Dirk-Kuehlers/publication/311936657/figure/fig2/AS:575505392992256@1514222586483/ICT-Solutions-main-features.png"
+            alt="Benefits" width="400" height="300"><br /><br />
+          <p><strong>ICT solution</strong></p>
+          <p>Here is the benifets diagram.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://icon-library.com/images/iot-icon-png/iot-icon-png-9.jpg" alt="Components" width="400"
+            height="280"><br />
+          <p><strong>ICT Components</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://businessanalystmentor.com/wp-content/uploads/2020/03/39570580_s.jpg" alt="Home Connect"
+            width="400" height="300"><br />
+          <p><strong>Home Solution</strong></p>
+
+        </div>
+      </div>
+    </div><br>
+
+    <h2><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp; ICT Solution Project Team &nbsp;&nbsp;<span
+        class="glyphicon glyphicon-user"></span></h2>
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <center>
+            <img src="images/ChineseMedicineSlide01.jpg" alt="Benefits" width="800" height="400">
+          </center>
+          <div class="carousel-caption" style="color:red">
+            <p>"A: This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President,
+                Comment Box</span></p>
+            <br /><br /><br /> <br /><br /><br />
+          </div>
+        </div>
+        <div class="item">
+          <center>
+            <img src="images/ChineseMedicineSlide02.png" alt="Benefits" width="800" height="400">
+          </center>
+          <div class="carousel-caption" style="color:red">
+            <p>"B: This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President,
+                Comment Box</span></p>
+            <br /><br /><br /> <br /><br /><br />
+          </div>
+        </div>
+        <div class="item">
+          <center>
+            <img src="images/ChineseMedicineSlide03.jpg" alt="Benefits" width="800" height="400">
+          </center>
+          <div class="carousel-caption" style="color:red">
+            <p>"C: This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President,
+                Comment Box</span></p>
+            <br /><br /><br /> <br /><br /><br />
+          </div>
+        </div>
+        <div class="item">
+          <center>
+            <img src="images/ChineseMedicineSlide04.jpg " alt="Benefits" width="800" height="400">
+          </center>
+          <div class="carousel-caption" style="color:red">
+            <p>"D: This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President,
+                Comment Box</span></p>
+            <br /><br /><br /> <br /><br /><br />
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Container (Password Section) -->
+  <div id="pricing" class="container-fluid">
+    <div class="text-center">
+      <h2>Password Protaction</h2>
+      <h4>It is very important for anyone password setup</h4>
+    </div>
+    <div class="row slideanim">
+      <div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1>Protection</h1>
+          </div>
+          <div class="panel-body">
+            <img src="images/Pwprotaction.png" class="img-size img-thumbnail" />
+          </div>
+          <div class="panel-footer">
+            <h3>Using Password Protection</h3>
+            <h4>Help you lost your any infomation. it is your first step to protect by yourself on the cyberattacks</h4>
+            <a href="https://www.youtube.com/watch?v=agnDpN961xU" target="_blank">
+              <button class="btn btn-lg">
+                <span class="glyphicon glyphicon-search"></span> Refer</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1><span class="glyphicon glyphicon-user"></span> User</h1>
+          </div>
+          <div class="panel-body">
+            <img src="https://www.eschoolnews.com/files/2021/05/password-protection-network-security.jpeg"
+              class="img-size img-thumbnail" alt="cute cat" />
+          </div>
+          <div class="panel-footer">
+            <h3>Set a Good Password</h3>
+            <h4>Using complicate combination word and number with special charcters to made your password</h4>
+            <button class="btn btn-lg"><span class="glyphicon glyphicon-user"></span> Refer</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1>Programmer</h1>
+          </div>
+          <div class="panel-body">
+            <img src="https://clikcloud.com/wp-content/uploads/2015/06/data-breach.jpg" class="img-size img-thumbnail"
+              alt="cute cat" />
+          </div>
+          <div class="panel-footer">
+            <h3>Using Hash Sha256</h3>
+            <h4>Set password input hash using sha256 in the werkzeug librar. So no one could find user password except
+              himself </h4>
+            <button class="btn btn-lg">Refer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (Data View Section) -->
+  <div id="dataview" class="container-fluid">
+    <iframe
+      src="https://script.google.com/macros/s/AKfycbwY7oVBLjzus0CcGXpIcVYRlgNEUTRi3YIPlYdZaCYOT3zZ__U56rjfWCPhhqsM9eTqwQ/exec"
+      style="width: 100%; height: 700px;"></iframe>
+
+  </div>
+
+  <!-- Container (Contact Section) -->
+  <div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center" id="msg2">CONTACT</h2>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> NSW, Australia</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> wellsjohn220@gmail.com</p>
+      </div>
+      <div class="col-sm-7 slideanim">
+        <form name="contact-to-google-sheet">
+          <div class="row">
+            <div class="col-sm-4 form-group">
+              <input class="form-control" id="name" name="Name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-sm-8 form-group">
+              <input class="form-control" id="email" name="Email" placeholder="Email" type="email" required>
+            </div>
+          </div>
+          <textarea class="form-control" id="comments" name="Comment" placeholder="Comment" rows="5"></textarea><br>
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <select name="State">
+                <option>NSW</option>
+                <option>VIC</option>
+                <option>WA</option>
+                <option>QLD</option>
+                <option>NT</option>
+                <option>CT</option>
+              </select>
+              <input class="form-control" id="Creg" name="Creg" type="hidden">
+              <input class="form-control" id="Cregtime" name="Cregtime" type="hidden">
+            </div>
+            <div class="col-sm-6 form-group">
+              <button class="btn btn-default pull-right" type="submit" onclick="generateDate();">
+              <span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;Contact info Send by 12345</button>
+            </div>
+          </div>
+        </form>
+        <a href="https://docs.google.com/spreadsheets/d/14iX5e_qoyRxIRwtCba6Oe7L5eYUOCn1o_MBjf_16ft4/edit?usp=sharing"
+          target="_blank">
+          <button class="btn btn-default pull-right"><span
+              class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp;Check Subscribe</button></a>
+        <a href="https://docs.google.com/spreadsheets/d/1an6weroUcmNp2_Tju2byHVOmX--rLYxmZKtiegDovhc/edit?usp=sharing"
+          target="_blank">
+          <button class="btn btn-default pull-right"><span
+              class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp;Check Register</button></a>
+        <br /> <br />
+      </div>
+    </div>
+    <iframe
+      src="https://script.google.com/macros/s/AKfycbxm4YgWI9FVQ_dLuT396ttbhJKMCafDAI6xWsnrx6mM5B5mF8qIvrCfDSYvDRbWABYl/exec"
+      style="width: 100%; height: 700px;"></iframe>
+  </div>
+
+  <!-- Image of location/map -->
+  <img
+    src="https://www.torrens.edu.au/-/media/project/laureate/apac/torrens/stories/health/chinese-medicine-discover-a-2000-year-old-philosophy-in-the-21st-century/chinese-medicine-discover-a-2000-year-old-philosophy-in-the-21st-century-lg.png?rev=60b7e9892dc0432ba7aceda89e31d997"
+    class="w3-image w3-greyscale-min" id="myimg" style="width:100%">
+
+  <footer class="container-fluid text-center" id="myfoot">
+    <a href="#myPage" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>This site powered By <a href="https://wic.nsw.edu.au/" title="Visit Our College"
+        target="blank">wic.nsw.edu.au/</a></p>
+    <p>Powered by 12345 John</p>
+  </footer>
+</body>
+<!-- Load external JavaScript -->
+<script src="scripts.js"></script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxk5JaLa-mLp8s9s9viwIUtGaJoTUYove0EAzqNUDVDwh11gdppkHuhvfVlzl2hi-nxCw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  const scriptURL2 = 'https://script.google.com/macros/s/AKfycbzq28C4TzKwu1ER4S7nDKUvZJd4vzMPYnSu7aT0tY1lj9SJ7pQvOWLxbCM5TUrYZHL5/exec'
+  const form2 = document.forms['contact-to-google-sheet']
+  const msg2 = document.getElementById("msg2")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        msg.innerHTML = "<br />Thank you For Subscribing the Site by Doctor Li"
+        setTimeout(function () {
+          msg.innerHTML = "This site powered by Genies Info Tech"
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+  form2.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL2, { method: 'POST', body: new FormData(form2) })
+      .then(response => {
+        msg2.innerHTML = "Thanks for your contact details by Doctor Li"
+        setTimeout(function () {
+          msg2.innerHTML = "Contact"
+        }, 5000)
+        form2.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+
+</script>
+
+</html>
