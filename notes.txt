@@ -2,3 +2,7 @@
 https://www.youtube.com/watch?v=p1QU3kLFPdg
 
 https://github.com/wellsjohn220/ictsolution
+
+img#hideme {
+      margin-right: 20px;
+    }
